@@ -1,0 +1,40 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b1b2b2;
+}
+h1 {
+  margin: 20px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.libtn {
+  list-style: none;
+  color: black;
+  background-color: #c1c4c1;
+  border-radius: 15px;
+  margin: 20px;
+}
+a {
+  display: flex;
+  text-decoration: none;
+  transition: backgroud-color 0.2s ease;
+  padding: 12px;
+  border-bottom: solid thick transparent;
+}
+a:hover {
+  background-color: rgb(94, 97, 97);
+  color: white;
+  border-radius: 15px;
+  border-bottom: solid thick black;
+}
