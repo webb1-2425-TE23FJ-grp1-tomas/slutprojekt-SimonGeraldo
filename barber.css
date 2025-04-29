@@ -1,10 +1,10 @@
-img {
+img { 
   display: block;
   max-width: 100%;
 }
 .header {
   display: flex;
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
   background-color: #b1b2b2;
 }
@@ -38,3 +38,30 @@ a:hover {
   border-radius: 15px;
   border-bottom: solid thick black;
 }
+.hamburger{
+  display:none;
+}
+.nav-menu{
+  display:none;
+}
+
+@media screen and (max-width: 900px) {
+  .links{
+    display:none;
+  }
+  .hamburger {
+    display: flex;
+}
+
+.links {
+    display: none;
+  }
+  .hamburger{
+  margin: 20px;
+  height: 40px;
+  width:40px;
+  
+  }
+  
+}
+
