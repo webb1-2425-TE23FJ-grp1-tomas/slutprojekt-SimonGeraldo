@@ -1,3 +1,6 @@
+body {
+ background-color: rgb(235, 235, 208);
+}
 img {
   display: block;
   max-width: 100%;
@@ -71,29 +74,64 @@ a:hover {
 
 .om_mig{
   background-color:pink ;
+  grid-area: om_mig;
+  padding:10px;
+  border-radius: 15px;
 }
 .Kundrecensioner{
   background-color: lightblue;
+  grid-area: Kundrecensioner;
+  padding:10px;
+  border-radius: 15px;
 }
 .Boka{
   background-color: lightgreen;
+  grid-area:Boka;
+  padding:10px;
+  border-radius: 15px;
 }
 .Sociala_medier{
   background-color: lightyellow;
+  grid-area:Sociala_medier;
+  padding:10px;
+  border-radius: 15px;
 }
-.bild1{
+.gear{
   background-color: lightpink;
+  grid-area:gear;
+  padding:10px;
+  border-radius: 15px;
 }
-.bild2{
+.cutting{
   background-color: lightblue;
+  grid-area:cutting;
+  padding:10px;
+  border-radius: 15px;
 }
-.bild3{
+.fading{
   background-color: lightgreen;
+  grid-area:fading;
+  padding:10px;
+  border-radius: 15px;
 }
-.bild4{
+.chair{
   background-color: lightyellow;
+  grid-area:chair;
+  padding:10px;
+  border-radius: 15px;
 }
-
+.grid_container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #c1c4c1;
+}
+.Logo{
+    width: 100%;
+    height: auto;
+  }
 
 
 
@@ -113,8 +151,18 @@ a:hover {
   .grid_container {
     display: grid;
     grid-template-columns: 1fr;
-    gap:100px;
+    grid-template-areas: 
+    "om_mig"
+    "gear"
+    "Kundrecensioner"
+    "cutting"
+    "Boka"
+    "fading"
+    "Sociala_medier"
+    "chair";
   }
+  
+  
 }
 @media screen and (max-width: 900px) {
   .links {
@@ -128,6 +176,18 @@ a:hover {
     border-radius: 15px;
     margin: 20px;
   }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "om_mig"
+    "gear"
+    "Kundrecensioner"
+    "cutting"
+    "Boka"
+    "fading"
+    "Sociala_medier"
+    "chair";
   
 }
 @media screen and (min-width: 900px) {
@@ -138,5 +198,15 @@ a:hover {
     display: flex;
     list-style: none;
   }
-  
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "om_mig om_mig om_mig"
+    "gear gear Kundrecensioner"
+    "cutting fading chair"
+    "Sociala_medier Sociala_medier Sociala_medier";
+  }
+    
+  }
 }
