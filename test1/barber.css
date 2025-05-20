@@ -128,9 +128,10 @@ a:hover {
   box-sizing: border-box;
   background-color: #c1c4c1;
 }
-.Logo{
-    width: 100%;
+.logo{
     height: auto;
+    width: 70vw;
+    max-width: 500px;
   }
 
 
@@ -160,8 +161,12 @@ a:hover {
     "fading"
     "Sociala_medier"
     "chair";
+    
   }
-  
+ 
+  body{
+    background-color: rgb(219, 13, 6);
+  }
   
 }
 @media screen and (max-width: 900px) {
@@ -190,6 +195,8 @@ a:hover {
     "chair";
   
 }
+
+}
 @media screen and (min-width: 900px) {
   .hamburger {
     display: none;
@@ -205,8 +212,7 @@ a:hover {
     "om_mig om_mig om_mig"
     "gear gear Kundrecensioner"
     "cutting fading chair"
-    "Sociala_medier Sociala_medier Sociala_medier";
+    "Boka Sociala_medier Sociala_medier";
   }
     
   }
-}
