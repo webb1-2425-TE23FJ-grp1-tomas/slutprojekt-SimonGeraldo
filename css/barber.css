@@ -5,6 +5,16 @@ img {
   display: block;
   max-width: 100%;
 }
+p{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h1{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .header {
   display: flex;
   align-items: center;
@@ -69,53 +79,55 @@ a:hover {
   display: block;
   padding: 10px 20px;
 }
-
+.picture{
+  border-radius: 15px;
+}
 
 
 .om_mig{
-  background-color:pink ;
+  background-color:blanchedalmond ;
   grid-area: om_mig;
   padding:10px;
   border-radius: 15px;
 }
 .Kundrecensioner{
-  background-color: lightblue;
+  background-color: blanchedalmond;
   grid-area: Kundrecensioner;
   padding:10px;
   border-radius: 15px;
 }
 .Boka{
-  background-color: lightgreen;
+  background-color: blanchedalmond;
   grid-area:Boka;
   padding:10px;
   border-radius: 15px;
 }
 .Sociala_medier{
-  background-color: lightyellow;
+  background-color: blanchedalmond;
   grid-area:Sociala_medier;
   padding:10px;
   border-radius: 15px;
 }
 .gear{
-  background-color: lightpink;
+  background-color: blanchedalmond;
   grid-area:gear;
   padding:10px;
   border-radius: 15px;
 }
 .cutting{
-  background-color: lightblue;
+  background-color: blanchedalmond;
   grid-area:cutting;
   padding:10px;
   border-radius: 15px;
 }
 .fading{
-  background-color: lightgreen;
+  background-color: blanchedalmond;
   grid-area:fading;
   padding:10px;
   border-radius: 15px;
 }
 .chair{
-  background-color: lightyellow;
+  background-color: blanchedalmond;
   grid-area:chair;
   padding:10px;
   border-radius: 15px;
@@ -127,16 +139,25 @@ a:hover {
   padding: 20px;
   box-sizing: border-box;
   background-color: #c1c4c1;
+  gap:10px;
+
 }
 .logo{
     height: auto;
     width: 70vw;
     max-width: 500px;
   }
-
-
-
-
+.bottom-bar{
+  display: flex;
+  background-color: #b1b2b2;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+  
 @media screen and (max-width: 600px) {
   .links {
     display: none;
@@ -163,9 +184,8 @@ a:hover {
     "chair";
     
   }
- 
-  body{
-    background-color: rgb(219, 13, 6);
+  .bottom-bar{
+    display: none;
   }
   
 }

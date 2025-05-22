@@ -3,7 +3,9 @@
   <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="barber.css" />
+    <link rel="stylesheet" href="css/barber.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    
     <title>Geraldo Barbershop</title>
   </head>
   <body>
@@ -53,15 +55,18 @@
     
     
     <div class="grid_container">
-      <div class="om_mig">Välkommen till Geraldo Barbershop – mer än bara en klippning!
-Hos oss får du ett billigt alternativ utan att tumma på kvaliteten. Vi bjuder på en rolig och minnesvärd upplevelse, där du till och med kan utmana ditt mod med nya stilar. Centralt beläget i Linköping och med flexibla tider passar vi perfekt in i ditt schema. Kom som du är – gå därifrån som en ny människa!</div>
+      <div class="om_mig">
+        <p>Välkommen till </p><h1>Geraldo Barbershop</h1> <p>Mer än bara en klippning!
+Hos oss får du ett billigt alternativ utan att tumma på kvaliteten. Vi bjuder på en rolig och minnesvärd upplevelse, där du till och med kan utmana ditt mod med nya stilar. Centralt beläget i Linköping och med flexibla tider passar vi perfekt in i ditt schema. Kom som du är – gå därifrån som en ny människa!</p></div>
       <div class="Kundrecensioner">⭐️⭐️⭐️⭐️⭐️
-“Bästa klippningen jag någonsin fått! Geraldo Barbershop levererade verkligen – proffsigt, snabbt och med skön stämning. Det märks att de bryr sig om sina kunder. Kom dit för en enkel trimning men gick därifrån med ny stil och nytt självförtroende. Rekommenderas starkt!”
+<p>“Bästa klippningen jag någonsin fått! Geraldo Barbershop levererade verkligen – proffsigt, snabbt och med skön stämning. Det märks att de bryr sig om sina kunder. Kom dit för en enkel trimning men gick därifrån med ny stil och nytt självförtroende. Rekommenderas starkt!”</p>
 <br>— Lukas Rahn</div>
-      <div class="Boka">Boka tid i våran kalender, eller skriv till 073-515 44 59</div>
-      <div class="Sociala_medier">Följ oss på sociala medier!
-Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop på Instagram för att få en inblick i vad vi gör, nya stilar och erbjudanden. Du hittar oss längst ner på sidan!</div>
+      <div class="Boka"><p>Boka tid i våran kalender, eller skriv till <br> 073-515 44 59</p></div>
+      <div class="Sociala_medier"><p>Följ oss på sociala medier!
+Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop på Instagram för att få en inblick i vad vi gör, nya stilar och erbjudanden. Du hittar oss på om oss sidan!</p></div>
       <div class="gear">
+        <div class="gallery">
+          <a href="/assets-raw/gear.webp">
        <picture>
         <source
           media="(max-width: 600px)"
@@ -71,11 +76,15 @@ Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop p
           media="(max-width: 900px)"
           srcset="/assets/gear-900.webp"
           />
-          <img src="/assets-raw/gear.webp" alt="gear" />
+          <img src="/assets-raw/gear.webp" alt="Våran fina utrustning" />
        </picture>
+          </a>
+        </div>
       </div>
 
       <div class="cutting">
+        <div class="gallery">
+          <a href="/assets-raw/cutting barber.webp">
         <picture>
           <source
             media="(max-width: 600px)"
@@ -85,12 +94,15 @@ Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop p
             media="(max-width: 900px)"
             srcset="/assets/cutting-barber-900.webp"
             />
-          <img src="/assets-raw/cutting barber.webp" alt="cutting" />
+          <img src="/assets-raw/cutting barber.webp" alt="En klassisk klippning" />
         </picture>
-       
+       </a>
+        </div>
       </div>
       <div class="fading">
-        <picture>
+        <div class="gallery">
+    <a href="/assets-raw/cutting shop.jpg"> 
+      <picture>
           <source
             media="(max-width: 600px)"
             srcset="/assets/cutting-shop-600.webp"
@@ -99,10 +111,13 @@ Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop p
             media="(max-width: 900px)"
             srcset="/assets/cutting-shop-600.webp"
             />
-          <img src="/assets-raw/cutting shop.jpg" alt="fading" />
-        </picture>
+          <img src="/assets-raw/cutting shop.jpg" alt="När man mår som bäst!" />
+        </picture> </a>
+</div>
       </div>
       <div class="chair">
+        <div class="gallery">
+          <a href="/assets-raw/Barber chair.webp">
 <picture>
         <source
           media="(max-width: 600px)"
@@ -112,13 +127,28 @@ Vill du se fler av våra klippningar och upplevelser? Följ Geraldo Barbershop p
           media="(max-width: 900px)"
           srcset="/assets/Barber-chair-900.webp"
           />
-        <img src="/assets-raw/Barber chair.webp" alt="chair" />
-        
+        <img src="/assets-raw/Barber chair.webp" alt="Fina förhållanden" />
+</picture>
+          </a>      
+      </div>
       </div>
     </div>
-
+<div class="bottom-bar">
+  <div class="bottom">
+    <p>Geraldo Barbershop &copy; 2025</p>
+    <p>Linköping, Sverige</p>
+    <p>073-515 44 59 </p>
+  </div>
+</div>
     
 
     <script src="barber.js" defer></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+      const lightbox = new SimpleLightbox('.gallery a', {
+        captionsData: 'alt',
+        captionDelay: 250,
+      });
+    </script>
   </body>
 </html>
